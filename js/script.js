@@ -14,7 +14,7 @@ Fetches and processes the quotes from a txt file.
  const fetchData = async () => {
      try {
          // fetch the quotes from the text file
-         const response = await fetch('/assets/quotes.txt');
+         const response = await fetch('./assets/quotes.txt');
          if (!response.ok) {
              throw new Error ('Response was not ok. Please check the file path.');
          }
